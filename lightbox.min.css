@@ -85,7 +85,7 @@ body.lb-disable-scrolling {
     width: 34%;
     left: 0;
     float: left;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGIAAABiCAYAAACrpQYOAAAABmJLR0QA/wD/AP+gvaeTAAABgUlEQVR4nO3cv0rDUBxH8RtXdfMJBKEVdPcf9AF00qcURxXExVmfoyioCGpxcDgOWhwUmwTD/fXmfOYUvnBo05KkKUmSJEmSJEmSJEmSJEmSJHUOGAInwBMwAS6Bvdy7egUYAc/89A4c5d7XC18RXn+JMPUALOfeWbQaEaYOcm+dZSH3gLaAUUrpNKW0WOPwlW7X9FSDd8LUVu7NxWkR4Rqocu8uSosIY2A19+6iALvAS4MIt8Aw9+6iGCEAIwRghACMEIARAjBCAEYIwAgBGCEAIwRghACAzYYRxsBa7t3FAc6NkBlQAW9G+Da3l0r1T4AzP5oCADbwZB0Dzb++3gHruXcXyRiBGCMQYwRijECMEYgxAjFGIMYIxBiBGCMQYwSCt+XH0SLGDT6o0o0WMbZzb55lLq/QVVV1lVLaTylNar5k0N2a/zGXIVJqHOO+2zWq+8D7Uu6dvcDffwFxmHtfrwAD4Bh45PP3xgWwk3uXJEmSJEmSJEmSJEmSJEkqwQfgMzgr5UEoPwAAAABJRU5ErkJggg==") left 48% no-repeat;
+    background: url(../images/prev.png) left 48% no-repeat;
     filter: alpha(Opacity=0);
     opacity: 0;
     -webkit-transition: opacity 0.6s;
@@ -101,7 +101,7 @@ body.lb-disable-scrolling {
     width: 64%;
     right: 0;
     float: right;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAABmJLR0QA/wD/AP+gvaeTAAABc0lEQVR4nO3bPUoDURiF4e9aqViYRegORCSI2glme7oJTamlCRZa61b8KWxem1gZdTJk+G4m79MNJHA4B5IwdxIhSZIkSZIkSZIkSZIkSVqqkh3gN8AwIk5ml9NSymNmnrUBbAFjfhoD29n5eg+4mlP+t3tH6BAwAD7/GMARugQc/lO+I3QJ2Gs4gCN0BXh2hETAAfDuCImAY+B1gREegJ3s3L3iCBVwhAo4QgUcoQKOUAFHqIAjVMARKuAIFXCECjhCBYAzFruBdwdUex6+klqMMMrOHBGxkR1gWUopk4g4j4i3hm8Zdhinsd4M0ALZAXqlxUfQRXbm3mhR/i1+CS8H/gzNY/mJLD+R5Sey/ESWn8jyE1l+IstPZPmJLD+R5SfCx9NzAS+WnwTYX7fyazsRGzR83SQiRqWUjy7DrB1gF/+mmgu4tPxEwCZwM6f86z6WX+25KHAUEaezy2kp5SkxjiRJkiRJkiRJkiRJkiRpVXwBuh8e1BaenAoAAAAASUVORK5CYII=") right 48% no-repeat;
+    background: url("https://img.icons8.com/plasticine/100/000000/close-window.png") right 48% no-repeat;
     filter: alpha(Opacity=0);
     opacity: 0;
     -webkit-transition: opacity 0.6s;
@@ -155,7 +155,7 @@ body.lb-disable-scrolling {
     float: right;
     width: 30px;
     height: 30px;
-    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABr0lEQVRIie2VS4sTQRRGz22IOAM+ceEvELf2TQd84CIqjkjUxcyv1NUYTHzMLAQX6a6qv6ELnwjzSEJdF9MD0jjpdBh102dbH9+pW0VR0NLS8q9wzl0PIdxdNu+9V+dcWpdLFi1OJpNrwE6McRRCuFdXVhTFDTN7A+yEELorizudzlXgArAeY9z23vdPyuZ5nonILnAZWDOzKyuL0zR9b2YPgZ/AupkNi6K4X8157zVJkjFwEZiKyJaqjlcWA2RZ9sHMHpXyNREZOuce/y41s7ccTToVkU1VfVnXK3WBY/I8v5UkyQg4DxyKyCbwsZReaiJtJAYoiuK2iIyAc8ABMC03ciAiz1T19bJdjcQAIYSbMcZxKYRyelUdNumpveMq8/m88Wb/xH876qUnrkgPRWRLRPrAN+CsmW177wenKq5I981soKpDVfUi8gD4CpwxsxfLymuP2jl3B3hVSvfM7GmWZe8qmRRo9JYXTlx+DuNjqYgMqlKAbrcbYowbwHeOJn/uvd9YWTybzT4BP4C9JEmeqOruSdler1eYWR/4AuyLyOdF3bX8rW+xpaXl1PgF1+jPZWxdIoIAAAAASUVORK5CYII=") top right no-repeat;
+    background: url(../images/close.png) top right no-repeat;
     text-align: right;
     outline: 0;
     filter: alpha(Opacity=70);
