@@ -657,7 +657,7 @@
                     <div class="timeline timeline-second-style clearfix">
                       <div class="timeline-item clearfix">
                         <div class="left-part">
-                          <h5 class="item-period">06/2021 - 05/2023</h5>
+                          <h5 class="item-period">06/2021 - Present</h5>
                           <span class="item-company"
                             ><a
                               href="https://dsstech.com.pk/"
@@ -1572,5 +1572,26 @@
     <script src="js/jquery.googlemap.js"></script>
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      document
+        .getElementById("contact_form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting the traditional way
+
+          // Get form values
+          const name = document.getElementById("form_name").value;
+          const email = document.getElementById("form_email").value;
+          const subject = document.getElementById("form_subject").value;
+          const message = document.getElementById("form_message").value;
+
+          // Log or process the values
+          console.log("Name:", name);
+          console.log("Email:", email);
+          console.log("Subject:", subject);
+          console.log("Message:", message);
+
+          // You can add further processing here, like sending the data to a server
+        });
+    </script>
   </body>
 </html>
