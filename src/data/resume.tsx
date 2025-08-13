@@ -11,7 +11,7 @@ export const DATA = {
   description:
     "Web dev with 3+ years crafting fast, user-first websites. Obsessed with clean code & great UX. Building, learning, leveling up, one project at a time.",
   summary:
-    "I am an experienced web developer with over three years of hands-on expertise in building and maintaining dynamic, user-centric websites. I am seeking an opportunity with a reputable organization where I can apply my technical skills and contribute to the company’s growth, while continuing to advance my professional development.",
+    "Full Stack JavaScript Developer with expertise in MERN Stack, Next.js, and TypeScript. I build scalable, high-performance web apps that blend clean code with seamless user experiences. From modernizing legacy systems to creating interactive dashboards and tools, I turn complex ideas into intuitive, impactful solutions. Currently pursuing an MSc in Computer Science at the University of Portsmouth.",
   avatarUrl: "./me.jpg",
   skills: [
     "React",
@@ -22,7 +22,7 @@ export const DATA = {
     "C++",
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
+    // { href: "/", icon: HomeIcon, label: "Home" },
     { href: "./Abdullah Resume.pdf", icon: FileText, label: "Resume" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
@@ -74,7 +74,7 @@ export const DATA = {
       start: "2021",
       end: "2025",
       description:
-        "Led the migration of a Knockout.js web app to Angular.js, focusing on reusable components. Developed a React.js blog site, created reports with Report.js, and built interactive dashboards in Next.js to enhance data visualization and user engagement.",
+        "Successfully led the migration of a legacy Knockout.js application to Angular.js, implementing reusable components that boosted performance, scalability, and maintainability while reducing development time. Designed and launched a dynamic React.js blog site with a responsive, user-focused interface, increasing engagement by nearly 30%. Delivered accurate, visually compelling stakeholder reports using Report.js, and built multiple real-time, interactive dashboards in Next.js to enhance data visualization and support data-driven decision-making. Thrived in an Agile environment, contributing to stand-ups, sprint planning, and code reviews, fostering a culture of collaboration, innovation, and continuous improvement.",
     },
     {
       company: "Buzzwaretech",
@@ -86,7 +86,7 @@ export const DATA = {
       start: "2021",
       end: "2021",
       description:
-        "As a Front-End Developer, I designed and developed responsive websites using HTML, CSS, and JavaScript, focusing on user-friendly interfaces.",
+        "Designed and developed fully responsive websites using HTML, CSS, and JavaScript, delivering clean, user-friendly interfaces that enhanced usability and accessibility. Partnered closely with UI/UX designers to translate concepts into intuitive layouts, ensuring seamless user journeys. Achieved cross-browser compatibility and mobile responsiveness, optimizing performance across devices. Integrated RESTful APIs to connect front-end applications with back-end services, enabling dynamic content and improved functionality.",
     },
     {
       company: "Al Qaim Foundation",
@@ -195,7 +195,7 @@ export const DATA = {
     },
     {
       school: "Soft Solutions",
-      href: "https://abdullahminhas.github.io/img/oop.jpg",
+      href: "./oop.jpg",
       title: "Object Oriented Programming (C++)",
       logoUrl: "./softsolutions.jpeg",
       date: "09/2017",
@@ -219,14 +219,11 @@ export const DATA = {
       description:
         "Led a full-scale eCommerce project, creating a custom-designed Shopify website that perfectly matched the brand’s identity, managing social media presence, and running high-impact ad campaigns that boosted engagement and sales.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "Shopify",
         "TailwindCSS",
         "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Google Analytics",
+        "Meta Pixel"
       ],
       links: [
         {
