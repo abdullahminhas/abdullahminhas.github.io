@@ -23,7 +23,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/", icon: FileText, label: "Resume" },
+    { href: "./Abdullah Resume.pdf", icon: FileText, label: "Resume" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
