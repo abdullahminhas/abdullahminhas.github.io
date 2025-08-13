@@ -16,10 +16,14 @@ export const DATA = {
   skills: [
     "React",
     "Next.js",
-    "Typescript",
+    "Express.js",
     "Node.js",
     "Python",
     "C++",
+    "React Native",
+    "Tailwind",
+    "Shadcn",
+    "Mongo DB"
   ],
   navbar: [
     // { href: "/", icon: HomeIcon, label: "Home" },
@@ -188,7 +192,7 @@ export const DATA = {
     },
     {
       school: "Udemy",
-      href: "https://abdullahminhas.github.io/img/SEO%20certificate.jpg",
+      href: "./SEO certificate.jpg",
       title: "Search Engine Optimization",
       logoUrl: "./udemy.svg",
       date: "03/2020",
@@ -236,38 +240,32 @@ export const DATA = {
       video:
         "",
     },
-    // {
-    //   title: "Magic UI",
-    //   href: "https://magicui.design",
-    //   dates: "June 2023 - Present",
-    //   active: true,
-    //   description:
-    //     "Designed, developed and sold animated UI components for developers.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Stripe",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://magicui.design",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/magicuidesign/magicui",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video: "https://cdn.magicui.design/bento-grid.mp4",
-    // },
+    {
+      title: "FKS Building Services",
+      href: "https://fksbuildingservice.com",
+      dates: "",
+      active: true,
+      description:
+        "Built the **FKS** website using **Next.js**, **Tailwind CSS**, and **Radix UI** for a fast, responsive, and accessible interface, and deployed it on a **cloud-based VPS** for reliable performance.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Javascript",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Radix",
+        "VPS"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://fksbuildingservice.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "./website 2.png",
+      video: "",
+    },
     // {
     //   title: "llm.report",
     //   href: "https://llm.report",
