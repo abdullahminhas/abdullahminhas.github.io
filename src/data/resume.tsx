@@ -215,6 +215,38 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Materialix",
+      href: "https://abdullahminhas.github.io/Materialix/",
+      // dates: "Jan 2024 - Feb 2024",
+      dates: "",
+      active: true,
+      description:
+        "I built a frontend project using Tailwind CSS, Radix UI, and a Material 3 inspired component library. It delivers accessible, theme-able, and reusable UI components with a clean, modern aesthetic and consistent design principles.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Radix UI",
+        "Javascript",
+        "Material Design 3 (M3)"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://abdullahminhas.github.io/Materialix/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/abdullahminhas/Materialix",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "./website 3.png",
+      video:
+        "",
+    },
+    {
       title: "hussainabdullah.pk",
       href: "https://hussainabdullah.pk",
       // dates: "Jan 2024 - Feb 2024",
