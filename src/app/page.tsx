@@ -242,7 +242,8 @@ export default function Page() {
                 Client experiences
               </h2>
               <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I’ve helped clients build high-quality web applications that are fast, responsive, and reliable. Here’s what they have to say.
+                I’ve helped clients build high-quality web applications that are
+                fast, responsive, and reliable. Here’s what they have to say.
               </p>
             </div>
             <Carousel
@@ -254,7 +255,7 @@ export default function Page() {
             >
               <CarouselContent>
                 {DATA.testimonials.map((testimonial, id) => (
-                  <CarouselItem key={id}>
+                  <CarouselItem title={testimonial.platform} key={id}>
                     <Testimonial10
                       quote={testimonial.quote}
                       authorName={testimonial.author.name}
@@ -262,6 +263,7 @@ export default function Page() {
                       link={testimonial.link}
                       authorAvatarSrc={testimonial.author.avatar.src}
                       authorAvatarAlt={testimonial.author.avatar.alt}
+                      authorDesignation={testimonial.author.designation}
                     />
                   </CarouselItem>
                 ))}

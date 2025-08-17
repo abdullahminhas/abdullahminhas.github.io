@@ -2,6 +2,7 @@ import { Icons } from "@/components/icons";
 import Navbar from "@/components/navbar";
 import { Testimonial10 } from "@/components/testimonials";
 import { HomeIcon, FileText } from "lucide-react";
+import { platform } from "os";
 
 export const DATA = {
   name: "Abdullah Sajjad",
@@ -748,16 +749,33 @@ export const DATA = {
   testimonials: [
     {
       quote:
+        "Abdullah consistently delivers impactful solutions with strong technical expertise and a collaborative approach, adding significant value to both the team and stakeholders. His adaptability, problem-solving skills, and commitment to excellence make him a standout contributor.",
+      author: {
+        name: "Jahan Zaib",
+        rating: 0,
+        designation: "Teamlead DSS",
+        avatar: {
+          src: "./jahanzaib.jpeg",
+          alt: "teamlead dss",
+        },
+      },
+      platform: "Defence Solution & System",
+      link: "https://dsstech.com.pk/",
+    },
+    {
+      quote:
         "An excellent professional with above-average knowledge, good English, and quick responses. Delivered very fast. I will definitely reach out to him again.",
       author: {
         name: "m_ahmad_shakeel",
         rating: 5,
+        designation: "",
         avatar: {
           src: "./m_ahmad_shakeel.webp",
           alt: "m_ahmad_shakeel",
         },
       },
-      link: "https://www.fiverr.com/mabdullahminhas"
+      platform: "Fiverr Review",
+      link: "https://www.fiverr.com/mabdullahminhas",
     },
     {
       quote:
@@ -765,12 +783,14 @@ export const DATA = {
       author: {
         name: "apkators",
         rating: 5,
+        designation: "",
         avatar: {
           src: "./apkators.webp",
           alt: "apkators",
         },
       },
-      link: "https://www.fiverr.com/mabdullahminhas"
+      platform: "Fiverr Review",
+      link: "https://www.fiverr.com/mabdullahminhas",
     },
   ],
 } as const;
