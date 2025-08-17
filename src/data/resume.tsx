@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import Navbar from "@/components/navbar";
+import { Testimonial10 } from "@/components/testimonials";
 import { HomeIcon, FileText } from "lucide-react";
 
 export const DATA = {
@@ -23,7 +24,7 @@ export const DATA = {
     "React Native",
     "Tailwind",
     "Shadcn",
-    "Mongo DB"
+    "Mongo DB",
   ],
   navbar: [
     // { href: "/", icon: HomeIcon, label: "Home" },
@@ -228,7 +229,7 @@ export const DATA = {
         "Tailwind CSS",
         "Radix UI",
         "Javascript",
-        "Material Design 3 (M3)"
+        "Material Design 3 (M3)",
       ],
       links: [
         {
@@ -243,8 +244,7 @@ export const DATA = {
         },
       ],
       image: "./website 3.png",
-      video:
-        "",
+      video: "",
     },
     {
       title: "hussainabdullah.pk",
@@ -259,7 +259,7 @@ export const DATA = {
         "TailwindCSS",
         "Stripe",
         "Google Analytics",
-        "Meta Pixel"
+        "Meta Pixel",
       ],
       links: [
         {
@@ -269,8 +269,7 @@ export const DATA = {
         },
       ],
       image: "./website 1.png",
-      video:
-        "",
+      video: "",
     },
     {
       title: "FKS Building Services",
@@ -286,7 +285,7 @@ export const DATA = {
         "TailwindCSS",
         "Shadcn UI",
         "Radix",
-        "VPS"
+        "VPS",
       ],
       links: [
         {
@@ -744,6 +743,34 @@ export const DATA = {
           href: "https://github.com/UWPortalSDK/crowmark",
         },
       ],
+    },
+  ],
+  testimonials: [
+    {
+      quote:
+        "An excellent professional with above-average knowledge, good English, and quick responses. Delivered very fast. I will definitely reach out to him again.",
+      author: {
+        name: "m_ahmad_shakeel",
+        rating: 5,
+        avatar: {
+          src: "./m_ahmad_shakeel.webp",
+          alt: "m_ahmad_shakeel",
+        },
+      },
+      link: "https://www.fiverr.com/mabdullahminhas"
+    },
+    {
+      quote:
+        "Excellent MERN full-stack developer! Delivered custom full-stack web development exactly as requested—clean, responsive, and fully functional, frontend to backend. Completed on time with great communication and attention to detail. Highly recommend this MERN stack expert for scalable, high-performance web applications! 💯",
+      author: {
+        name: "apkators",
+        rating: 5,
+        avatar: {
+          src: "./apkators.webp",
+          alt: "apkators",
+        },
+      },
+      link: "https://www.fiverr.com/mabdullahminhas"
     },
   ],
 } as const;
