@@ -26,11 +26,11 @@ export function Testimonial10({
   return (
     <Link href={link || "#"} target="_blank">
       <div
-        className={`flex flex-col items-center text-center mt-9 ${
+        className={`flex flex-col items-center text-center ${
           className || ""
         }`}
       >
-        <p className="mb-8 font-medium lg:text-2xl">&ldquo;{quote}&rdquo;</p>
+        <p className="mb-8 font-medium lg:text-2xl break-words">&ldquo;{quote}&rdquo;</p>
         <div className="flex items-center gap-2 md:gap-4">
           <Avatar className="size-12 md:size-16">
             <AvatarImage src={authorAvatarSrc} alt={authorAvatarAlt} />

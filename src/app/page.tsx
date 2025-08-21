@@ -232,46 +232,47 @@ export default function Page() {
         </div>
       </section> */}
       <section id="testimonials">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Testimonials
+        <div className="space-y-12 w-full pb-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  My Testimonials
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Client experiences
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I&apos;ve helped clients build high-quality web applications
+                  that are fast, responsive, and reliable. Here&apos;s what they
+                  have to say.
+                </p>
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Client experiences
-              </h2>
-              <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I’ve helped clients build high-quality web applications that are
-                fast, responsive, and reliable. Here’s what they have to say.
-              </p>
             </div>
-            <Carousel
-              plugins={[
-                Autoplay({
-                  delay: 3500,
-                }),
-              ]}
-            >
-              <CarouselContent>
-                {DATA.testimonials.map((testimonial, id) => (
-                  <CarouselItem title={testimonial.platform} key={id}>
-                    <Testimonial10
-                      quote={testimonial.quote}
-                      authorName={testimonial.author.name}
-                      authorRating={testimonial.author.rating}
-                      link={testimonial.link}
-                      authorAvatarSrc={testimonial.author.avatar.src}
-                      authorAvatarAlt={testimonial.author.avatar.alt}
-                      authorDesignation={testimonial.author.designation}
-                    />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              {/* <CarouselPrevious />
-              <CarouselNext /> */}
-            </Carousel>
           </BlurFade>
+          <Carousel className="mt-0"
+            plugins={[
+              Autoplay({
+                delay: 3500,
+              }),
+            ]}
+          >
+            <CarouselContent>
+              {DATA.testimonials.map((testimonial, id) => (
+                <CarouselItem key={id}>
+                  <Testimonial10
+                    quote={testimonial.quote}
+                    authorName={testimonial.author.name}
+                    authorRating={testimonial.author.rating}
+                    link={testimonial.link}
+                    authorAvatarSrc={testimonial.author.avatar.src}
+                    authorAvatarAlt={testimonial.author.avatar.alt}
+                    authorDesignation={testimonial.author.designation}
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </section>
       <section id="contact">
