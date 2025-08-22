@@ -14,7 +14,7 @@ export const DATA = {
     "Web dev with 3+ years crafting fast, user-first websites. Obsessed with clean code & great UX. Building, learning, leveling up, one project at a time.",
   summary:
     "Full Stack JavaScript Developer with expertise in MERN Stack, Next.js, and TypeScript. I build scalable, high-performance web apps that blend clean code with seamless user experiences. From modernizing legacy systems to creating interactive dashboards and tools, I turn complex ideas into intuitive, impactful solutions. Currently pursuing an MSc in Computer Science at the University of Portsmouth.",
-  avatarUrl: "./me.jpg",
+  avatarUrl: "./me.png",
   skills: [
     "React",
     "Next.js",

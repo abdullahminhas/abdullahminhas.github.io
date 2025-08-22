@@ -39,7 +39,7 @@ export default function Page() {
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-28 border" title={DATA.name}>
                 <AvatarImage
                   alt={DATA.name}
                   className="transform scale-x-[-1]"
@@ -259,7 +259,7 @@ export default function Page() {
           >
             <CarouselContent>
               {DATA.testimonials.map((testimonial, id) => (
-                <CarouselItem key={id}>
+                <CarouselItem title={testimonial.platform} key={id}>
                   <Testimonial10
                     quote={testimonial.quote}
                     authorName={testimonial.author.name}
