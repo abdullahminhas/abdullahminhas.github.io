@@ -1,4 +1,5 @@
 "use client";
+import React, { useState } from "react";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -16,10 +17,19 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { RadioGroup } from "@/components/ui/radio-group";
+import RadioButton from "@/components/radio-button";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
+  const [filter, setFilter] = useState("all");
+
+  const filteredProjects =
+    filter === "all"
+      ? DATA.projects
+      : DATA.projects.filter((project) => project.filter === filter);
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
@@ -166,25 +176,41 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+
+          <div className="flex flex-col gap-4">
+            <BlurFade delay={BLUR_FADE_DELAY * 11}>
+              <RadioGroup
+                defaultValue="all"
+                className="flex"
+                value={filter}
+                onValueChange={(val) => setFilter(val)}
               >
-                <ProjectCard
-                  href={project.href}
+                <RadioButton id="r1" value="all" label="All" />
+                <RadioButton id="r2" value="shopify" label="Shopify" />
+                <RadioButton id="r3" value="next" label="Next.js" />
+                {/* <RadioButton id="r4" value="c++" label="C++" /> */}
+              </RadioGroup>
+            </BlurFade>
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+              {filteredProjects.map((project, id) => (
+                <BlurFade
                   key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  dates={project.dates}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
+                  delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                >
+                  <ProjectCard
+                    href={project.href}
+                    key={project.title}
+                    title={project.title}
+                    description={project.description}
+                    dates={project.dates}
+                    tags={project.technologies}
+                    image={project.image}
+                    video={project.video}
+                    links={project.links}
+                  />
+                </BlurFade>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -250,7 +276,8 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <Carousel className="mt-0"
+          <Carousel
+            className="mt-0"
             plugins={[
               Autoplay({
                 delay: 3500,

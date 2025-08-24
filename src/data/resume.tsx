@@ -221,6 +221,7 @@ export const DATA = {
       href: "https://abdullahminhas.github.io/Materialix/",
       // dates: "Jan 2024 - Feb 2024",
       dates: "",
+      filter: "next",
       active: true,
       description:
         "I built a frontend project using Tailwind CSS, Radix UI, and a Material 3 inspired component library. It delivers accessible, theme-able, and reusable UI components with a clean, modern aesthetic and consistent design principles.",
@@ -252,6 +253,7 @@ export const DATA = {
       href: "https://hussainabdullah.pk",
       // dates: "Jan 2024 - Feb 2024",
       dates: "",
+      filter: "shopify",
       active: true,
       description:
         "Led a full-scale eCommerce project, creating a custom-designed Shopify website that perfectly matched the brand’s identity, managing social media presence, and running high-impact ad campaigns that boosted engagement and sales.",
@@ -276,6 +278,7 @@ export const DATA = {
       title: "FKS Building Services",
       href: "https://fksbuildingservice.com",
       dates: "",
+      filter: "next",
       active: true,
       description:
         "Built the **FKS** website using **Next.js**, **Tailwind CSS**, and **Radix UI** for a fast, responsive, and accessible interface, and deployed it on a **cloud-based VPS** for reliable performance.",
