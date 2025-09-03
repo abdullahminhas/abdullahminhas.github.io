@@ -1,4 +1,3 @@
-````markdown
 # 🌐 Personal Portfolio
 
 This is my personal **portfolio website**, built with modern web technologies to showcase my projects, skills, and experience.  
@@ -22,7 +21,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/abdullahminhas/abdullahminhas.github.io.git
 cd abdullahminhas.github.io
 npm install
-````
+```
 
 Now when the dependencies are installed, run the project:
 
@@ -36,12 +35,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## 🚀 Deployment
 
-This project is optimized for deployment on platforms like **Vercel**, **Netlify**, or **Cloudflare Pages**.
-For example, to deploy with Vercel:
+This project is optimized for deployment on platforms like **Github Pages**, **Vercel**, **Netlify**, or **Cloudflare Pages**.
+right now its deployed on github pages and all you need to do is to push this on the github:
 
 ```bash
-npm run build
-vercel deploy
+git push
 ```
 
 ---
@@ -64,7 +62,7 @@ vercel deploy
 * Dark mode support
 * Animated UI elements with Magic UI
 * Modular and reusable components with shadcn/ui
-* SEO-friendly meta tags and Open Graph support
+* SEO-friendly meta tags
 
 ---
 
@@ -80,10 +78,3 @@ This project is licensed under the **MIT License** – feel free to use and adap
 * [Tailwind CSS](https://tailwindcss.com/)
 * [shadcn/ui](https://ui.shadcn.com/)
 * [Magic UI](https://magicui.design/)
-
-```
-
----
-
-👉 Do you also want me to add a **preview screenshot / demo link section** (with images or GIFs) so visitors can immediately see what your portfolio looks like?
-```
