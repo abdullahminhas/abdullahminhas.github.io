@@ -21,7 +21,7 @@ const Projects = ({ DATA, BLUR }) => {
     setCurrentPage(page);
   };
   //   showing 4 projects
-  const ITEMS_PER_PAGE = 2;
+  const ITEMS_PER_PAGE = 4;
   const totalItems = filteredProjects.length; // Total number of items
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, totalItems);
@@ -44,7 +44,7 @@ const Projects = ({ DATA, BLUR }) => {
           <RadioButton id="r1" value="all" label="All" />
           <RadioButton id="r2" value="shopify" label="Shopify" />
           <RadioButton id="r3" value="next" label="Next.js" />
-          {/* <RadioButton id="r4" value="c++" label="C++" /> */}
+          <RadioButton id="r4" value="c++" label="C++" />
         </RadioGroup>
       </BlurFade>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">

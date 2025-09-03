@@ -301,39 +301,32 @@ export const DATA = {
       image: "./website 2.png",
       video: "",
     },
-    // {
-    //   title: "llm.report",
-    //   href: "https://llm.report",
-    //   dates: "April 2023 - September 2023",
-    //   active: true,
-    //   description:
-    //     "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-    //   technologies: [
-    //     "Next.js",
-    //     "Typescript",
-    //     "PostgreSQL",
-    //     "Prisma",
-    //     "TailwindCSS",
-    //     "Shadcn UI",
-    //     "Magic UI",
-    //     "Stripe",
-    //     "Cloudflare Workers",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://llm.report",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/dillionverma/llm.report",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video: "https://cdn.llm.report/openai-demo.mp4",
-    // },
+    {
+      title: "Student Information System",
+      href: "https://github.com/abdullahminhas/Student-Information-System",
+      dates: "",
+      filter: "c++",
+      active: true,
+      description:
+        "This project is coded in C++ and made for students who want to learn more about C++. concepts include OOP, operator overloading and file handling",
+      technologies: [
+        "C++",
+        "Object Oriented Programming",
+        "Operator Overloading",
+        "File Handling",
+        "Pointers",
+        "Loops",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abdullahminhas/Student-Information-System",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "./website 4.png",
+      video: "",
+    },
     // {
     //   title: "Automatic Chat",
     //   href: "https://automatic.chat",
