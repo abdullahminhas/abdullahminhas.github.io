@@ -1,16 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { ProjectCard } from "./project-card";
 import RadioButton from "./radio-button";
 import BlurFade from "./magicui/blur-fade";
 import { RadioGroup } from "./ui/radio-group";
+import ProjectPagination from "./project-pagination";
 
 const Projects = ({ DATA, BLUR }) => {
   const [filter, setFilter] = useState("all");
 
-  const filteredProjects =
-    filter === "all"
+  const filteredProjects = useMemo(() => {
+    return filter === "all"
       ? DATA.projects
       : DATA.projects.filter((project) => project.filter === filter);
+  }, [DATA.projects, filter]);
+
+  const [itemsToShow, setItemsToShow] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const onPageChange = (page) => {
+    setCurrentPage(page);
+  };
+  //   showing 4 projects
+  const ITEMS_PER_PAGE = 2;
+  const totalItems = filteredProjects.length; // Total number of items
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, totalItems);
+
+  useEffect(() => {
+    // Assuming you have a list of items
+    setTotalPages(Math.ceil(totalItems / ITEMS_PER_PAGE));
+    setItemsToShow([...filteredProjects].slice(startIndex, endIndex));
+  }, [filteredProjects, startIndex, endIndex]);
 
   return (
     <div className="flex flex-col gap-4">
@@ -29,7 +49,7 @@ const Projects = ({ DATA, BLUR }) => {
       </BlurFade>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
         {DATA &&
-          filteredProjects.map((project, id) => (
+          itemsToShow.map((project, id) => (
             <BlurFade key={project.title} delay={BLUR * 12 + id * 0.05}>
               <ProjectCard
                 href={project.href}
@@ -45,6 +65,14 @@ const Projects = ({ DATA, BLUR }) => {
             </BlurFade>
           ))}
       </div>
+      {/* we can show the pagination once we have more than 4 projects */}
+      {totalItems > ITEMS_PER_PAGE ? (
+        <ProjectPagination
+          totalPages={totalPages}
+          currentPage={currentPage}
+          onPageChange={onPageChange}
+        />
+      ) : null}
     </div>
   );
 };
