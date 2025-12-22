@@ -217,6 +217,38 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Salah Tracker",
+      href: "https://salah-tracker-five.vercel.app/",
+      // dates: "Jan 2024 - Feb 2024",
+      dates: "",
+      filter: "next",
+      active: true,
+      description:
+        "A hobby project built using **Next.js** and **shadcn/ui** that helps users track their spiritual journey. It **records prayers**, rakats, timing, and consistency, and presents **weekly progress** in a clean, modern, and accessible interface.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Radix UI",
+        "Javascript",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://salah-tracker-five.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/abdullahminhas/salah-tracker",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "./website 5.png",
+      video: "",
+    },
+    {
       title: "Materialix",
       href: "https://abdullahminhas.github.io/Materialix/",
       // dates: "Jan 2024 - Feb 2024",
@@ -224,7 +256,7 @@ export const DATA = {
       filter: "next",
       active: true,
       description:
-        "I built a frontend project using Tailwind CSS, Radix UI, and a Material 3 inspired component library. It delivers accessible, theme-able, and reusable UI components with a clean, modern aesthetic and consistent design principles.",
+        "I built a frontend project using **Tailwind CSS**, **Radix UI**, and a **Material 3** inspired component library. It delivers accessible, theme-able, and **reusable UI components** with a clean, modern aesthetic and consistent design principles.",
       technologies: [
         "Next.js",
         "React",

@@ -26,11 +26,16 @@ const Projects = ({ DATA, BLUR }) => {
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, totalItems);
 
+  // Reset to page 1 when filter changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filter]);
+
   useEffect(() => {
     // Assuming you have a list of items
     setTotalPages(Math.ceil(totalItems / ITEMS_PER_PAGE));
     setItemsToShow([...filteredProjects].slice(startIndex, endIndex));
-  }, [filteredProjects, startIndex, endIndex]);
+  }, [filteredProjects, startIndex, endIndex, totalItems]);
 
   return (
     <div className="flex flex-col gap-4">
