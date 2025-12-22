@@ -4,6 +4,7 @@ import RadioButton from "./radio-button";
 import BlurFade from "./magicui/blur-fade";
 import { RadioGroup } from "./ui/radio-group";
 import ProjectPagination from "./project-pagination";
+import { Badge } from "./ui/badge";
 
 const Projects = ({ DATA, BLUR }) => {
   const [filter, setFilter] = useState("all");
@@ -40,6 +41,7 @@ const Projects = ({ DATA, BLUR }) => {
   return (
     <div className="flex flex-col gap-4">
       <BlurFade delay={BLUR * 11}>
+        <div className="flex justify-between">
         <RadioGroup
           defaultValue="all"
           className="flex"
@@ -51,6 +53,8 @@ const Projects = ({ DATA, BLUR }) => {
           <RadioButton id="r3" value="next" label="Next.js" />
           <RadioButton id="r4" value="c++" label="C++" />
         </RadioGroup>
+        <Badge variant="secondary">{DATA.projects.length}</Badge>
+        </div>
       </BlurFade>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
         {DATA &&
@@ -72,11 +76,13 @@ const Projects = ({ DATA, BLUR }) => {
       </div>
       {/* we can show the pagination once we have more than 4 projects */}
       {totalItems > ITEMS_PER_PAGE ? (
+        <div className="mt-3">
         <ProjectPagination
           totalPages={totalPages}
           currentPage={currentPage}
           onPageChange={onPageChange}
         />
+        </div>
       ) : null}
     </div>
   );

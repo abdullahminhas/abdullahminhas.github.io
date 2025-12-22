@@ -52,10 +52,11 @@ const ProjectPagination = ({ totalPages, currentPage, onPageChange }) => {
     <React.Fragment>
       <Pagination>
         <PaginationContent>
+          {currentPage !== 1 && (
           <PaginationItem>
             <PaginationPrevious
               className={
-                currentPage === 1 ? "cursor-default" : "cursor-pointer"
+                currentPage === 1 ? "cursor-default hover:bg-transparent" : "cursor-pointer"
               }
               onClick={() => {
                 if (currentPage !== 1) {
@@ -64,6 +65,7 @@ const ProjectPagination = ({ totalPages, currentPage, onPageChange }) => {
               }}
             />
           </PaginationItem>
+          )}
           {pagesToShow[0] > 1 && (
             <React.Fragment>
               <PaginationItem>
@@ -105,10 +107,11 @@ const ProjectPagination = ({ totalPages, currentPage, onPageChange }) => {
               </PaginationItem>
             </React.Fragment>
           )}
+          {currentPage !== totalPages && (
           <PaginationItem>
             <PaginationNext
               className={
-                currentPage === totalPages ? "cursor-default" : "cursor-pointer"
+                currentPage === totalPages ? "cursor-default hover:bg-transparent" : "cursor-pointer"
               }
               onClick={() => {
                 if (currentPage !== totalPages) {
@@ -117,6 +120,7 @@ const ProjectPagination = ({ totalPages, currentPage, onPageChange }) => {
               }}
             />
           </PaginationItem>
+          )}
         </PaginationContent>
       </Pagination>
     </React.Fragment>
