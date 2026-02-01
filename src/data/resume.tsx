@@ -89,7 +89,7 @@ export const DATA = {
       location: "Islamabad, PK",
       title: "Front End Engineer",
       logoUrl: "./buzzware.png",
-      start: "2021",
+      start: "2020",
       end: "2021",
       description:
         "Designed and developed fully responsive websites using HTML, CSS, and JavaScript, delivering clean, user-friendly interfaces that enhanced usability and accessibility. Partnered closely with UI/UX designers to translate concepts into intuitive layouts, ensuring seamless user journeys. Achieved cross-browser compatibility and mobile responsiveness, optimizing performance across devices. Integrated RESTful APIs to connect front-end applications with back-end services, enabling dynamic content and improved functionality.",
