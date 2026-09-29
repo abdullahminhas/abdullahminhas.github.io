@@ -61,7 +61,13 @@ export default function Experience({ experience, delay = 0 }: ExperienceProps) {
               <span className="absolute left-0 mt-1 -ml-4.5 hidden w-8 text-right text-xs font-medium text-muted-foreground sm:block">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <span className="relative ms-auto mt-0.5 flex h-4 w-4 items-center justify-center rounded-full border bg-secondary">
+              <span
+                className={
+                  item.status === "Current"
+                    ? "relative ms-auto mt-0.5 flex h-4 w-4 items-center justify-center rounded-full border bg-secondary after:absolute after:top-1/2 after:right-1 after:size-1.5 after:-translate-y-1/2 after:animate-ping after:rounded-full after:bg-primary after:content-['']"
+                    : "relative ms-auto mt-0.5 flex h-4 w-4 items-center justify-center rounded-full border bg-secondary"
+                }
+              >
                 <span
                   className={
                     item.status === "Current"
@@ -70,6 +76,7 @@ export default function Experience({ experience, delay = 0 }: ExperienceProps) {
                   }
                 />
               </span>
+
               <div>
                 <Link
                   href={item.link}
@@ -85,7 +92,7 @@ export default function Experience({ experience, delay = 0 }: ExperienceProps) {
 
                 <Link
                   href={item.link}
-                  className="mt-0.5 flex flex-col sm:items-center justify-between gap-0.75 sm:gap-2 text-sm text-muted-foreground sm:flex-row"
+                  className="mt-0.5 flex flex-col justify-between gap-0.75 text-sm text-muted-foreground sm:flex-row sm:items-center sm:gap-2"
                   onClick={(e) => handleClick(e, index)}
                 >
                   <div className="flex items-center gap-1">

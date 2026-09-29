@@ -42,13 +42,25 @@ export function Education({ education, delay = 0 }: EducationProps) {
               </span>
 
               {/* Timeline dot */}
-              <span className="relative z-10 ms-auto mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border bg-secondary">
-                <span className="size-1.5 rounded-full bg-muted-foreground" />
+              <span
+                className={
+                  education.end === "Present"
+                    ? "relative z-0 ms-auto mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border bg-secondary after:absolute after:top-1/2 after:right-1 after:size-1.5 after:-translate-y-1/2 after:animate-ping after:rounded-full after:bg-foreground after:content-['']"
+                    : "relative z-10 ms-auto mt-1 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border bg-secondary"
+                }
+              >
+                <span
+                  className={
+                    education.end === "Present"
+                      ? "size-1.5 rounded-full bg-foreground"
+                      : "size-1.5 rounded-full bg-muted-foreground"
+                  }
+                />
               </span>
 
               {/* Content */}
               <div className="flex min-w-0 flex-1 gap-x-4">
-                <Avatar className="bg-muted-background size-8 shrink-0 border border-border ring-1 ring-border/50 ring-offset-1 ring-offset-background sm:size-12 dark:bg-foreground">
+                <Avatar className="dark:ring-line size-8 shrink-0 rounded-full border-[0.5px] border-muted-foreground/15 bg-background ring-1 ring-border/50 ring-offset-1 ring-offset-background sm:size-12">
                   <AvatarImage
                     src={education.logoUrl}
                     alt={education.school}

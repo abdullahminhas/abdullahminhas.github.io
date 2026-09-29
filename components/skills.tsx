@@ -53,13 +53,13 @@ export function Skills({ skills, delay = 0 }: SkillsProps) {
             />
             <div
               className={cn(
-                "flex items-center gap-x-4 pe-0 pb-4 sm:w-[65%] sm:py-4 sm:ps-6",
+                "flex items-center gap-x-4 pe-0 pb-4 sm:w-[65%] sm:py-4 sm:ps-6 mt-1",
                 index === 0 && "pt-0 sm:pt-0"
               )}
             >
-              <span className="invisible mr-1.5 text-lg select-none sm:hidden">
+              {/* <span className="invisible mr-1.5 text-lg select-none sm:hidden">
                 0{index + 1}
-              </span>
+              </span> */}
               <div className="flex w-full flex-row flex-wrap items-center gap-2">
                 {skill.items.map((Item, index) => (
                   <Badge className="gap-x-1.5 align-middle text-xs py-2!" variant="outline" key={index}>

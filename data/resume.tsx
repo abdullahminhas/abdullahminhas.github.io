@@ -35,11 +35,11 @@ export const DATA = {
     },
     {
       label: "CURRENTLY",
-      value: "Building & Learning",
+      value: "MSc Computer Science",
     },
     {
       label: "SPECIALISED IN ",
-      value: "Web Applications",
+      value: "Web & Cross Platform Apps",
     },
     {
       label: "LOCAL TIME",
@@ -122,7 +122,7 @@ export const DATA = {
         start: "2021",
         end: "2025",
       },
-      status: "Current",
+      status: "former",
       type: "Full-time",
       description:
         "Successfully led the migration of a legacy Knockout.js application to Angular.js, implementing reusable components that boosted performance, scalability, and maintainability while reducing development time. Designed and launched a dynamic React.js blog site with a responsive, user-focused interface, increasing engagement by nearly 30%. Delivered accurate, visually compelling stakeholder reports using Report.js, and built multiple real-time, interactive dashboards in Next.js to enhance data visualization and support data-driven decision-making. Thrived in an Agile environment, contributing to stand-ups, sprint planning, and code reviews, fostering a culture of collaboration, innovation, and continuous improvement.",
@@ -473,6 +473,39 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Shadcn Ui Portfolio",
+      href: "https://abdullahminhas.github.io/",
+      // dates: "Jan 2024 - Feb 2024",
+      dates: "",
+      filter: "next",
+      active: true,
+      description:
+        "A clean, responsive developer portfolio built with **Next.js**, **shadcn/ui**, and **Tailwind CSS**, featuring projects, experience, certifications, and skills through a minimal monochromatic interface.",
+      technologies: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Radix UI",
+        "Javascript",
+        "Shadcn UI",
+        "Magic UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://abdullahminhas.github.io/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/abdullahminhas/abdullahminhas.github.io.git",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "./website 6.png",
+      video: "",
+    },
+    {
       title: "Salah Tracker",
       href: "https://salah-tracker-five.vercel.app/",
       // dates: "Jan 2024 - Feb 2024",
@@ -706,9 +739,15 @@ export const DATA = {
       link: `https://wa.me/447424947889?text=${encodeURIComponent(message)}`,
     },
     {
-      icon: Icons.globe,
-      label: "Southampton, UK",
-      sublabel: "Based in",
+      icon: Icons.fiverr,
+      label: "Fiverr",
+      sublabel: "Available on freelance",
+      link: "#",
+    },
+    {
+      icon: Icons.upwork,
+      label: "Upwork",
+      sublabel: "Available on freelance",
       link: "#",
     },
   ],

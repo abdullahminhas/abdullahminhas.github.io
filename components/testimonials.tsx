@@ -68,7 +68,7 @@ export function Testimonials({ testimonials }: TestimonialsProps) {
   return (
     <TooltipProvider delayDuration={200}>
       {/* Carousel */}
-      <div className="relative mt-10 sm:mt-14">
+      <div className="relative">
         {/* <button
             type="button"
             onClick={() => api?.scrollPrev()}
@@ -155,7 +155,7 @@ function TestimonialCard({ testimonial }: { testimonial: TestimonialItem }) {
   const displayName = formatAuthorName(author.name)
 
   const card = (
-    <div className="px-6 py-4 sm:px-10 sm:py-6">
+    <div className="px-6 pb-4 sm:px-10 sm:pb-6">
       <Quote className="size-8 fill-muted-foreground/15 text-muted-foreground/15" />
 
       <p className="mt-6 text-sm leading-relaxed text-foreground sm:mt-7 sm:text-base">

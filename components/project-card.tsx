@@ -1,3 +1,4 @@
+"use client"
 import { Badge } from "@/components/ui/badge"
 import React from "react"
 import { CardTitle } from "./ui/card"
@@ -7,6 +8,8 @@ import { ArrowUpRight } from "lucide-react"
 import { Separator } from "./ui/separator"
 import Markdown from "react-markdown"
 import Image from "next/image"
+import { FlickeringGrid } from "@/components/ui/flickering-grid"
+import { useTheme } from "next-themes"
 
 interface Props {
   index: number
@@ -39,6 +42,8 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const { resolvedTheme } = useTheme()
+
   return (
     <div className="group">
       {/* index + external link */}
@@ -61,10 +66,23 @@ export function ProjectCard({
         <Link
           href={href || "#"}
           className={cn(
-            "block aspect-video max-h-fit w-full shrink-0 overflow-hidden rounded-lg border border-border bg-muted sm:w-72",
+            "relative block aspect-video max-h-fit w-full shrink-0 overflow-hidden rounded-lg sm:w-72",
             className
           )}
         >
+          {/* border border-border bg-muted */}
+          <FlickeringGrid
+            className="absolute"
+            squareSize={2}
+            gridGap={1}
+            color={
+              resolvedTheme === "dark" ? "rgb(255, 255, 255)" : "rgb(0, 0, 0)"
+            }
+            style={{
+              maskImage: "linear-gradient(to bottom, black, transparent)",
+              WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
+            }}
+          />
           {video && (
             <video
               src={video}
@@ -81,7 +99,7 @@ export function ProjectCard({
               alt={title}
               width={500}
               height={300}
-              className="h-auto w-full object-cover object-top"
+              className="relative z-10 h-auto w-full object-cover object-top"
             />
           )}
         </Link>

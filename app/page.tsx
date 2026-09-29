@@ -319,7 +319,7 @@ export default function Hero() {
               <span className="text-xs text-muted-foreground/60">•</span>
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <ModeToggle className="size-auto px-0" />
+                  <ModeToggle className="size-auto px-0 text-muted-foreground" />
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>Theme toggle</p>

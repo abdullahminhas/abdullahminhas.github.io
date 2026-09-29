@@ -112,7 +112,7 @@ export function Stats({ stats, delay = 0 }: StatsProps) {
               {stat.label.toUpperCase()}
             </span>
 
-            <span className="truncate text-sm text-foreground">
+            <span className="block max-w-xs truncate text-sm text-foreground" title={stat.value}>
               {stat.label === "LOCAL TIME" ? (
                 <Tooltip>
                   <TooltipTrigger>
